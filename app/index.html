@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Survey</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+<center><h1>Sample Survey App on Blockchain</center></h1>
+ <h3>First Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option11</td>
+     <td id="candidate-1"></td>
+    </tr>
+    <tr>
+     <td>option12</td>
+     <td id="candidate-2"></td>
+    </tr>
+    </tr>
+    <tr>
+     <td>option13</td>
+     <td id="candidate-3"></td>
+    </tr>
+    <tr>
+     <td>option14</td>
+     <td id="candidate-4"></td>
+    </tr>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_one">
+    <option value="option11">option11</option>
+    <option value="option12">option12</option>
+    <option value="option13">option13</option>
+    <option value="option14">option14</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_one"></div>
+ <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Second Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option21</td>
+     <td id="candidate-5"></td>
+    </tr>
+    <tr>
+     <td>option22</td>
+     <td id="candidate-6"></td>
+    </tr>
+    <tr>
+     <td>option23</td>
+     <td id="candidate-7"></td>
+    </tr>
+    <tr>
+     <td>option24</td>
+     <td id="candidate-8"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_two">
+    <option value="option21">option21</option>
+    <option value="option22">option22</option>
+    <option value="option23">option23</option>
+    <option value="option24">option24</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_two"></div>
+ <a href="#" onclick="voteForSecondCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Third Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option31</td>
+     <td id="candidate-9"></td>
+    </tr>
+    <tr>
+     <td>option32</td>
+     <td id="candidate-10"></td>
+    </tr>
+    <tr>
+     <td>option33</td>
+     <td id="candidate-11"></td>
+    </tr>
+    <tr>
+     <td>option34</td>
+     <td id="candidate-12"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_three">
+    <option value="option31">option31</option>
+    <option value="option32">option32</option>
+    <option value="option33">option33</option>
+    <option value="option34">option34</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_three"></div>
+ <a href="#" onclick="voteForThirdCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Fourth Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option41</td>
+     <td id="candidate-13"></td>
+    </tr>
+    <tr>
+     <td>option42</td>
+     <td id="candidate-14"></td>
+    </tr>
+    <tr>
+     <td>option43</td>
+     <td id="candidate-15"></td>
+    </tr>
+    <tr>
+     <td>option44</td>
+     <td id="candidate-16"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_four">
+    <option value="option41">option41</option>
+    <option value="option42">option42</option>
+    <option value="option43">option43</option>
+    <option value="option44">option44</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_four"></div>
+ <a href="#" onclick="voteForFourthCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Fifth Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option51</td>
+     <td id="candidate-17"></td>
+    </tr>
+    <tr>
+     <td>option52</td>
+     <td id="candidate-18"></td>
+    </tr>
+    <tr>
+     <td>option53</td>
+     <td id="candidate-19"></td>
+    </tr>
+    <tr>
+     <td>option54</td>
+     <td id="candidate-20"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_five">
+    <option value="option51">option51</option>
+    <option value="option52">option52</option>
+    <option value="option53">option53</option>
+    <option value="option54">option54</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_five"></div>
+ <a href="#" onclick="voteForFifthCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Sixth Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option61</td>
+     <td id="candidate-21"></td>
+    </tr>
+    <tr>
+     <td>option62</td>
+     <td id="candidate-22"></td>
+    </tr>
+    <tr>
+     <td>option63</td>
+     <td id="candidate-23"></td>
+    </tr>
+    <tr>
+     <td>option64</td>
+     <td id="candidate-24"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_six">
+    <option value="option61">option61</option>
+    <option value="option62">option62</option>
+    <option value="option63">option63</option>
+    <option value="option64">option64</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_six"></div>
+ <a href="#" onclick="voteForSixthCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+ <h3>Seventh Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option71</td>
+     <td id="candidate-25"></td>
+    </tr>
+    <tr>
+     <td>option72</td>
+     <td id="candidate-26"></td>
+    </tr>
+    <tr>
+     <td>option73</td>
+     <td id="candidate-27"></td>
+    </tr>
+    <tr>
+     <td>option74</td>
+     <td id="candidate-28"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_seven">
+    <option value="option71">option71</option>
+    <option value="option72">option72</option>
+    <option value="option73">option73</option>
+    <option value="option74">option74</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_seven"></div>
+ <a href="#" onclick="voteForSeventhCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+ 
+ <h3>Eighth Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option81</td>
+     <td id="candidate-29"></td>
+    </tr>
+    <tr>
+     <td>option82</td>
+     <td id="candidate-30"></td>
+    </tr>
+    <tr>
+     <td>option83</td>
+     <td id="candidate-31"></td>
+    </tr>
+    <tr>
+     <td>option84</td>
+     <td id="candidate-32"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_eight">
+    <option value="option81">option81</option>
+    <option value="option82">option82</option>
+    <option value="option83">option83</option>
+    <option value="option84">option84</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_eight"></div>
+ <a href="#" onclick="voteForEighthCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+  <h3>Nineth Question?</h3>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Options</th>
+     <th>Counts</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>option91</td>
+     <td id="candidate-33"></td>
+    </tr>
+    <tr>
+     <td>option92</td>
+     <td id="candidate-34"></td>
+    </tr>
+    <tr>
+     <td>option93</td>
+     <td id="candidate-35"></td>
+    </tr>
+    <tr>
+     <td>option94</td>
+     <td id="candidate-36"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <form>
+  <select id="candidate_nine">
+    <option value="option91">option91</option>
+    <option value="option92">option92</option>
+    <option value="option93">option93</option>
+    <option value="option94">option94</option>
+  </select>
+  <br><br>
+</form>
+ <div id="msg_nine"></div>
+ <a href="#" onclick="voteForNinethCandidate()" class="btn btn-primary">Submit</a>
+ <br><br>
+
+
+</body>
+
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
